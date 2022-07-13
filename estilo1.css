@@ -1,0 +1,25 @@
+#menuhorizontal {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+  
+  }
+  #menuhorizontal a {
+    width: 200px;
+    text-decoration:none;
+    text-align:center;
+    color:#0088ff;
+    background-color:rgb(149, 149, 149);
+    padding:3px 5px;
+    border-right:1px solid rgb(0, 0, 0);
+    display:block;
+  }
+  
+  #menuhorizontal li {
+    float:left;
+    align-items: center;
+  }
+  
+ .navbar-nav a {
+  color: #fff !important;
+ }

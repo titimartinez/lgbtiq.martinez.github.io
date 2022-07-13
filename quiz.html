@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form>
+        <p>1.Las personas LGBTI y aquellas con identidades de género no convencional existen:</p>
+        <input type="radio" name="pregunta1" id="checkbox1">a.Sobre todo en Occidente, aunque en menor número en el resto del mundo a consecuencia de la globalización.
+        <br>
+        <input type="radio" name="pregunta1" id="checkbox2">b.En todos los países, regiones, ciudades, pueblos y comunidades del mundo.
+        <br>
+        <input type="radio" name="pregunta1" id="checkbox3">c.En la mayoría de los países, aunque se agrupan sobre todo  en los centros urbanos y escasamente o nada en las zonas rurales.
+        <br>
+
+
+
+        <p>2.Las leyes que penalizan una conducta sexual consentida entre personas del mismo
+            sexo y las diversas identidades de género existen en:</p>
+        <input type="radio" name="pregunta2" id="checkbox4">a.Menos de 15 países y ningún país impone como castigo máximo la pena de muerte.
+        <br>
+        <input type="radio" name="pregunta2" id="checkbox5">b.Menos de 35 países y al menos cinco países imponen como castigo máximo la pena de muerte.
+        <br> 
+        <input type="radio" name="pregunta2" id="checkbox6">c.Más de 75 países y al menos siete países imponen como castigo máximo la pena de muerte.
+        <br>
+
+
+        <p>3.Personas de todas las regiones del mundo son objeto de los siguientes abusos de los derechos humanos, discriminación o persecución a consecuencia de su orientación sexual real o supuesta, su identidad de género o su expresión de género.</p>
+        <input type="radio" name="pregunta3" id="checkbox7">a.Asesinato, tortura o violación.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox8">b.Humillación pública, estereotipos negativos, acoso, exposición pública/revelación, abuso o delitos motivados por prejuicios.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox9">c.Tipificación penal, arresto y detención arbitrarios, negación del derecho a un juicio justo y pena de muerte, en ocasiones según las leyes de aplicación general, como leyes de alteración del orden público o de moralidad.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox10">d. Negación del acceso o acceso limitado a la asistencia o la protección policial, asícomo a los mecanismos de denuncia de violaciones de los derechos humanos y deacceso a la justicia.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox11">e. Negación del acceso o acceso limitado a la atención médica, la educación, la vivienda, los servicios sociales y la seguridad social.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox12">f. Discriminación en la contratación y destitución sumaria en el trabajo.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox13">g. Acoso, violencia o discriminación en las escuelas, los lugares de trabajo, las comunidades y las familias.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox14">h. Tratamiento médico forzoso, incluidos exámenes anales, cirugías genitales, operaciones forzosas de cambio de sexo, esterilización forzosa, tratamiento «reparador» para «curar» la homosexualidad y terapia de choque.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox15">i. Restricciones arbitrarias del derecho a la libertad de expresión y ataques a sus defensores y las organizaciones que les prestan su apoyo a través de «leyes de propaganda» y de otros medios.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox16">j. Falta de reconocimiento oficial de la identidad de género de las personas trans.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox17">K. Discriminación y violencia contra parejas del mismo sexo o sus hijos.
+        <br>
+        <input type="radio" name="pregunta3" id="checkbox18">l. Todas son correctas.
+        <br>
+
+
+
+        <input type="button" value="Mostrar" onClick="contarSeleccionados()">
+    </form>
+
+    <script>
+        function contarSeleccionados() {
+            let cant = 0;
+            if (document.getElementById("checkbox2").checked) {
+                cant++;
+            }
+            if (document.getElementById("checkbox6").checked) {
+                cant++;
+            }
+            if (document.getElementById("checkbox18").checked) {
+                cant++;
+            }
+            alert('La cantidad de respuestas correctas son: ' + cant);
+        }
+    </script>
+
+</body>
+
+</html>
